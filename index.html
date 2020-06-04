@@ -25,7 +25,9 @@ http://www.templatemo.com/tm-501-neaty
           <![endif]-->
 
     <!-- load JS files -->
-     <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) --> 
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
     <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
     <script>     
@@ -59,7 +61,7 @@ http://www.templatemo.com/tm-501-neaty
               // other options
             }); 
 
-            $('.tm-current-year').text(new Date().getFullYear());                
+            $('.tm-current-year').text(new Date().getFullYear());
         });
     </script>
 </head>
@@ -98,17 +100,15 @@ http://www.templatemo.com/tm-501-neaty
                 <!-- Right column: content -->
                 <div class="tm-right-column">
                     <div class="tm-content-div">
-
                         <section id="welcome" class="tm-section">
                             <script>
                                 $("#welcome").load("./page/welcome.html")
                             </script>
                         </section>
 
-
                         <section id="pubTalk" class="tm-section">
                             <script>
-                                $("#pubTalk").load("./page/pubTalk/pubTalk.html")
+                                $("#pubTalk").load("./page/pubTalk.html")
                             </script>
                         </section>
 
@@ -125,7 +125,7 @@ http://www.templatemo.com/tm-501-neaty
                         </section>
 
                         <footer>
-                            <p class="tm-copyright-p">Last Update: May 16 2020</p>
+                            <p class="tm-copyright-p">Last Update: June 2020</p>
                         </footer>
                     </div>  
                 </div> <!-- Right column: content -->
